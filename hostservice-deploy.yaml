@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hostservice-deploy
+spec:
+  selector:
+    matchLabels:
+      app: hostservice  #이거랑
+  
+  template:
+    metadata:
+      labels:
+        app: hostservice  #이거랑 같아야함
+    
+    spec:
+      containers:
+      - name: hostservice-cont
+  
+        image: phl0904/node-app
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
