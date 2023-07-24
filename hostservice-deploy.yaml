@@ -16,7 +16,7 @@ spec:
       containers:
       - name: hostservice-cont
   
-        image: phl0904/node-app
+        image: phl0904/node-app:1.0
         resources:
           limits:
             memory: "128Mi"
