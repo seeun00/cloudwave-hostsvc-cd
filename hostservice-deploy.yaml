@@ -16,7 +16,7 @@ spec:
       containers:
       - name: hostservice-cont
   
-        image: seeun00/hostservice:1.0
+        image: phl0904/hostservice:3.0
         resources:
           limits:
             memory: "128Mi"
