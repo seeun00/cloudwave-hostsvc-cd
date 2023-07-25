@@ -16,7 +16,7 @@ spec:
       containers:
       - name: hostservice-cont
   
-        image: phl0904/hostservice:3.0
+        image: phl0904/hostservice:a5dda804870e20025919ffd50c6be1e6afdeed7e
         resources:
           limits:
             memory: "128Mi"
